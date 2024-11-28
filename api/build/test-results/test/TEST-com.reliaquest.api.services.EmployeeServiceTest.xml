@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reliaquest.api.services.EmployeeServiceTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2024-11-28T05:06:56" hostname="GajendranoMacBook-Pro.local" time="0.279">
+  <properties/>
+  <testcase name="getAllEmployeeByIdTest()" classname="com.reliaquest.api.services.EmployeeServiceTest" time="0.21"/>
+  <testcase name="getTopTenHighestEarningEmployeeNamesTest()" classname="com.reliaquest.api.services.EmployeeServiceTest" time="0.007"/>
+  <testcase name="getAllEmployeesBySearchStringErrorTest()" classname="com.reliaquest.api.services.EmployeeServiceTest" time="0.008"/>
+  <testcase name="getAllEmployeesBySearchStringTest()" classname="com.reliaquest.api.services.EmployeeServiceTest" time="0.003"/>
+  <testcase name="getHighestSalaryOfEmployeesTest()" classname="com.reliaquest.api.services.EmployeeServiceTest" time="0.004"/>
+  <testcase name="getAllEmployeesErrorTest()" classname="com.reliaquest.api.services.EmployeeServiceTest" time="0.004"/>
+  <testcase name="getAllEmployeesTest()" classname="com.reliaquest.api.services.EmployeeServiceTest" time="0.003"/>
+  <testcase name="createEmployeeTest()" classname="com.reliaquest.api.services.EmployeeServiceTest" time="0.002"/>
+  <testcase name="deleteEmployeeTest()" classname="com.reliaquest.api.services.EmployeeServiceTest" time="0.005"/>
+  <testcase name="getAllEmployeeByIdErrorTest()" classname="com.reliaquest.api.services.EmployeeServiceTest" time="0.004"/>
+  <testcase name="getTopTenHighestEarningEmployeeNamesErrorTest()" classname="com.reliaquest.api.services.EmployeeServiceTest" time="0.003"/>
+  <testcase name="getHighestSalaryOfEmployeesErrorTest()" classname="com.reliaquest.api.services.EmployeeServiceTest" time="0.004"/>
+  <system-out><![CDATA[2024-11-28T14:06:57.081+09:00 ERROR 69072 --- [employee-api] [    Test worker] c.r.api.services.EmployeeService         : Exception happened for fetching employees for a given search string. Server error
+2024-11-28T14:06:57.101+09:00 ERROR 69072 --- [employee-api] [    Test worker] c.r.api.services.EmployeeService         : Exception happened for fetching employees. Server error
+2024-11-28T14:06:57.116+09:00  INFO 69072 --- [employee-api] [    Test worker] c.r.api.services.EmployeeService         : Employee Name: Gajendra to be deleted
+2024-11-28T14:06:57.123+09:00 ERROR 69072 --- [employee-api] [    Test worker] c.r.api.services.EmployeeService         : Exception happened for fetching employee by id. Server error
+2024-11-28T14:06:57.128+09:00 ERROR 69072 --- [employee-api] [    Test worker] c.r.api.services.EmployeeService         : Exception happened for fetching top 10 highest paying employees. Server error
+2024-11-28T14:06:57.133+09:00 ERROR 69072 --- [employee-api] [    Test worker] c.r.api.services.EmployeeService         : Exception happened for getting highest salary of employees. Server error
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

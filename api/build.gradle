@@ -1,0 +1,22 @@
+plugins {
+    id 'project-conventions'
+}
+
+dependencies {
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'org.springframework.cloud:spring-cloud-starter-openfeign:4.1.3'
+    implementation 'io.github.openfeign:feign-okhttp:13.5'
+    testImplementation 'com.github.tomakehurst:wiremock:3.0.1'
+    implementation('org.springframework.boot:spring-boot-starter-web') {
+        exclude group: 'org.eclipse.jetty', module: 'jetty-server'
+    }
+    implementation 'junit:junit:4.13.2'
+    // Mockito dependencies
+    testImplementation 'org.mockito:mockito-core:5.5.0'  // Latest version of Mockito for Java 17 compatibility
+    testImplementation 'org.mockito:mockito-junit-jupiter:5.5.0'  // Integration with JUnit 5
+
+}
+
+springBoot {
+    mainClass = 'com.reliaquest.api.ApiApplication'
+}
